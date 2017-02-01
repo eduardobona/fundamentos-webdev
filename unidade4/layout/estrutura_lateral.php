@@ -8,11 +8,18 @@
         <li class="titulo">
             <h3>Assuntos</h3>
             <ul>
-                <li><a href="cidadania.html">Cidadania e Justiça</a></li>
-                <li><a href="ciencia.html">Ciência e Tecnologia</a></li>
-                <li><a href="cultura.html">Cultura</a></li>
-                <li><a href="defesa.html">Defesa e Segurança</a></li>
-                <li><a href="economia.html">Economia e Empregos</a></li>
+<?php
+    // recebendo array de dados
+    $assuntos = include 'dados/assuntos.php';
+
+    // criando template html para facilitar impressão
+    $html_li = '<li><a href="assunto.php?codigo=%s">%s</a></li>';
+
+    // imprimindo (saída de dados dinâmicos)
+    foreach ($assuntos as $codigo => $assunto) {
+        printf($html_li, $codigo, $assunto);
+    }
+?>
             </ul>
         </li>
     </ul>
