@@ -1,0 +1,306 @@
+/**
+* Inicio do Cabeçalho Estrutural
+* Estilos do Cabeçalho
+**/
+.cabecalho{
+    width: 980px; /* definindo largura */
+    margin: 0 auto; /* irá centralizar nossa div na tela */
+}
+
+
+/*******************************/
+/* INÍCIO CABEÇALHO INFORMAÇÃO */
+/*******************************/
+.cabecalho-informacao{
+    background-color: #f1f1f1; /* definindo cor de fundo */
+    /**
+     * Este recurso deverá sempre ser usado em estruturas
+     * que possuam filhos que recebam propriedades float.
+     */
+    overflow: auto;
+}
+
+    /**
+     * Estilos para qualquer elemento a
+     * dentro de cabecalho-informacao
+     */
+    .cabecalho-informacao a{
+        color: #726060; /* definindo cor do texto */
+        text-decoration: none; /* removendo "underline" */
+        font-size: 12px; /* definindo tamanho do texto */
+        font-weight: bold /* definindo estilo bold para o texto */
+    }
+    /**
+     * utilizando o :hover apenas para que o css aplique
+     * os efeitos quando o mouse estiver sobre o elemento
+     */
+    .cabecalho-informacao a:hover{
+        text-decoration: underline; /* mostrar o "underline" no link */
+    }
+
+    /**
+     * Estilos para qualquer elemento ul
+     * dentro da classe cabecalho-informacao
+     */
+    .cabecalho-informacao ul{
+        margin: 5px 0; /* definindo margem (top/bottom) e (left/right) ao mesmo tempo */
+    }
+    .cabecalho-informacao ul li{
+        float: left; /* estrutura deverá flutuar à esquerda */
+        list-style: none; /* removendo estilo de marcador padrão */
+        padding: 5px 20px; /* espaçamento interno sendo aplicado */
+        border-left: 1px solid #ccc; /* criando uma borda esquerda */
+    }
+    /**
+     * apenas para o último elemento do seletor
+     * estaremos aplicanado um estilo css
+     */
+    .cabecalho-informacao ul li:last-child{
+        border-right: 1px solid #ccc; /* criando uma borda direita */
+    }
+
+    /**
+     * Bandeira do Brasil
+     */
+    .cabecalho-informacao .informacao-brasil{
+        float:left;
+        width: 100px;
+        padding:10px 0;
+        padding-left: 20px;
+        
+        font: bold 12px/18px tahoma;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #726060; /* definindo cor do texto */
+    }
+        .cabecalho-informacao .informacao-brasil img{
+            display: block;
+            float: left;
+            margin-right: 10px;
+            
+        }
+        .cabecalho-informacao .informacao-brasil span{
+            display: block;
+            float: left;
+            line-height: 20px;
+        }
+
+
+    .cabecalho-informacao .informacao-servicos{
+        float: left;
+        width: 320px;
+        padding: 0;
+    }
+        .cabecalho-informacao .informacao-servicos li{
+            float: left;
+        }
+
+    .cabecalho-informacao .informacao-links{
+        float: left;
+        width: 540px;
+        padding: 0;
+        margin: 0px;
+    }
+        .cabecalho-informacao .informacao-links ul{
+            float: right;
+        }
+/*******************************/
+/* FIM DE CABEÇALHO INFORMAÇÃO */
+/*******************************/
+
+/*********************************/
+/* INÍCIO DE CABEÇALHO DESTAQUES */
+/*********************************/
+@font-face{
+    font-family: openSansBold;
+    src: url('fonts/OpenSans-ExtraBold.ttf');
+}
+
+.cabecalho-destaque{
+    background-color: #0A651A;
+    margin: 0;
+    overflow: auto;
+}
+
+    .cabecalho-destaque h1{                
+        float: left;
+        width: 430px;
+        padding-left: 20px;
+        
+        font-family: openSansBold, arial, sans-serif, times;
+        font-size: 38px;
+        color: #ffdc19;
+    }
+
+    .cabecalho-destaque .busca{
+        width: 510px;
+        float: right;
+        padding-top: 30px;
+    }
+        .cabecalho-destaque .busca form{
+            background-color: white;
+            width: 230px;
+            padding: 5px;
+            float: right;
+            margin-right: 20px;
+
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .cabecalho-destaque .busca form input{
+            border: 0;
+            font-size: 12px;
+            color: #666;
+            line-height: 18px;
+        }
+        .cabecalho-destaque .busca form input[type="text"]{
+            width: 200px;
+            float: left
+        }
+        .cabecalho-destaque .busca form input[type="image"]{
+            width: 20px;
+            float: left
+        }
+
+    .cabecalho-ouvidoria{
+        background-color: #00420C;
+        margin: 0;
+        overflow: auto;
+    }
+        .cabecalho-ouvidoria ul{
+            text-align: right;
+            margin: 0;
+            margin-right: 10px;
+            padding: 10px;
+        }
+        .cabecalho-ouvidoria ul li{
+            list-style: none;
+            display: inline;
+            border-right: 1px solid #999;
+            padding: 0px 10px;
+        }
+        .cabecalho-ouvidoria ul li:last-child{
+            border: none;
+            padding-right: 0;
+        }
+        .cabecalho-ouvidoria ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+        }
+/******************************/
+/* FIM DE CABEÇALHO DESTAQUES */
+/******************************/
+
+/**
+* Inicio do Corpo Estrutural
+* Composto de 4 Estruturas
+**/
+.corpo{
+/*    background:blue;*/
+    width: 980px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 10px 0 0 0;
+}
+
+/**
+ * Estrutura 1. Banner
+ */
+.corpo .banner-principal{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+/**
+ * Estrutura 2. Mapa do Site
+ */
+.corpo .mapa-do-site ul{
+    padding: 0 10px;
+    overflow: auto;
+}
+    .corpo .mapa-do-site ul li{
+        list-style: none;
+
+        float: left;
+        padding: 0;
+        margin-right: 10px;
+
+        color: black;
+        font-size: 10px
+    }
+    .corpo .mapa-do-site ul li a{
+        color: darkblue;
+        text-decoration: none;
+    }
+    .corpo .mapa-do-site ul li a:hover{
+        text-decoration: underline
+    }
+
+/**
+ * Estrutura 3. Menu Lateral
+ */
+.corpo .estrutura-lateral{
+    width: 200px;
+    float: left;
+}
+    .corpo .estrutura-lateral ul{
+        margin: 0;
+        padding: 0;
+    }
+    .corpo .estrutura-lateral ul.menu-destaque li{
+        margin: 0 10px;
+        padding: 3px 10px;
+        list-style: none;
+        border-top: 1px solid #ccc;
+    }
+    .corpo .estrutura-lateral ul.menu-destaque li:last-child{
+        border-bottom: 1px solid #ccc;
+    }
+    .corpo .estrutura-lateral ul.menu-destaque li a{
+        text-decoration: none;
+        font-size: 14px
+    }
+
+    .corpo .estrutura-lateral ul.menu-estruturado li h3{
+        border-top: 5px solid green;
+        background-color: #ccc;
+        padding: 10px;
+        padding-bottom: 20px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .corpo .estrutura-lateral ul.menu-estruturado li a{
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 15px;
+        display: block;
+    }
+    .corpo .estrutura-lateral ul.menu-estruturado li li:first-child a{
+        padding-top: 0;
+    }
+
+/**
+ * Estrutura 4. Conteúdo Principal
+ */
+.corpo .conteudo{
+    width: 740px;
+    float: left;
+    background-color: pink;
+}
+
+
+/**
+* Início do Rodapé Estrutural
+* Estilos do Rodapé
+**/
+.rodape{
+    background: yellow
+}
+
+.rodape .rodape-mapa{
+    
+}
