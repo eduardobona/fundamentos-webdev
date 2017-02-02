@@ -1,16 +1,16 @@
 <?php
 
 return array(
-    0 => "Cidadania e Justiça",
-    1 => "Ciência e Tecnologia",
-    2 => "Cultura",
-    3 => "Defesa e Segurança",
-    4 => "Economia e Emprego",
-    5 => "Educação",
-    6 => "Esporte",
-    7 => "Governo",
-    8 => "Infraestrutura",
-    9 => "Meio Ambiente",
-    10 => "Saúde",
-    11 => "Turismo"
+    1 => "Cidadania e Justiça",
+    2 => "Ciência e Tecnologia",
+    3 => "Cultura",
+    4 => "Defesa e Segurança",
+    5 => "Economia e Emprego",
+    6 => "Educação",
+    7 => "Esporte",
+    8 => "Governo",
+    9 => "Infraestrutura",
+    10 => "Meio Ambiente",
+    11 => "Saúde",
+    12 => "Turismo"
 );

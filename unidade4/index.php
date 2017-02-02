@@ -16,12 +16,18 @@
 
             <div class="conteudo">
                 <div class="noticia-destaque">
-                    <h3>Cidadania e Justiça</h3>
+<?php
+    $assuntos = include 'dados/assuntos.php';
+    $noticias = include 'dados/noticias.php';
+    $noticia_destaque = array_shift($noticias);
+?>
+                    
+                    <h3><?php echo $assuntos[$noticia_destaque['assunto']] ?></h3>
                     <div class="noticia-chamada">
-                        <a href="#"><img src="imagens/noticias/destaque_bolsafamilia.jpeg" class="right"></a>
-                        <small>Políticas Públicas</small>
-                        <h4><a href="#">Governo federal zera fila de espera do Bolsa Família em janeiro</a></h4>
-                        <p><a href="#">Cerca de 460 mil pessoas que aguardavam para receber benefício foram incluídas no programa</a></p>
+                        <a href="#"><img src="imagens/noticias/<?php echo $noticia_destaque['foto'] ?>" class="right"></a>
+                        <small><?php echo $noticia_destaque['tema']?></small>
+                        <h4><a href="#"><?php echo $noticia_destaque['titulo']?></a></h4>
+                        <p><a href="#"><?php echo $noticia_destaque['subtitulo']?></a></p>
                     </div>
                 </div>
                 <div class="noticia-lista">
