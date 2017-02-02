@@ -203,6 +203,7 @@
     margin: 0 auto;
     overflow: auto;
     padding: 10px 0 0 0;
+    /*background: red;*/
 }
 
 /**
@@ -287,11 +288,89 @@
  * Estrutura 4. Conteúdo Principal
  */
 .corpo .conteudo{
-    width: 740px;
+    width: 750px;
     float: left;
-    background-color: pink;
+    margin-left: 20px;
+    /*background-color: pink;*/
 }
 
+    /**
+     * Notícia em Destaque
+     */
+    .corpo .conteudo .noticia-destaque{
+        overflow: auto;
+    }
+    .corpo .conteudo .noticia-destaque h3{
+        border-top: 5px solid green;
+        background-color: #ccc;
+        padding: 10px;
+        padding-bottom: 30px;
+        margin-top: 0;
+        font-size: 18px;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .corpo .conteudo .noticia-destaque small{
+        text-transform: uppercase;
+    }
+    .corpo .conteudo .noticia-destaque h4{
+        font-size: 26px;
+        margin: 10px 0;
+    }
+    .corpo .conteudo .noticia-destaque .noticia-chamada p{
+        font-size: 14px;
+    }
+    .corpo .conteudo .noticia-destaque a{
+        text-decoration: none;
+        color: #000;
+    }
+    .corpo .conteudo .noticia-destaque a:hover{
+        text-decoration: underline;
+    }
+    .corpo .conteudo .noticia-destaque .noticia-chamada img{
+        float: left;
+        margin-right: 20px;
+    }
+    .corpo .conteudo .noticia-destaque .noticia-chamada img.right{
+        float:right;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    /**
+     * Lista de 3 Notícias
+     */
+    .corpo .conteudo .noticia-lista{
+        padding-top: 20px;
+    }
+    .corpo .conteudo .noticia-lista ul{
+        padding: 0; margin: 0;
+    }
+    .corpo .conteudo .noticia-lista ul li{
+        list-style: none;
+        width: 230px;
+        float: left;
+        margin-right: 30px;
+    }
+    .corpo .conteudo .noticia-lista ul li:last-child{
+        margin: 0
+    }
+    .corpo .conteudo .noticia-lista a{
+        text-decoration: none;
+        color: #000;
+    }
+    .corpo .conteudo .noticia-lista a:hover{
+        text-decoration: underline;    
+    }
+    .corpo .conteudo .noticia-lista h4{
+        font-size: 15px;
+    }
+    .corpo .conteudo .noticia-lista p{
+        font-size: 14px;
+    }
+    .corpo .conteudo .noticia-lista small{
+        font-size: 10px;
+    }
 
 /**
 * Início do Rodapé Estrutural
