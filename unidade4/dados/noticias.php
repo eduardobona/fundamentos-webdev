@@ -20,15 +20,12 @@ return array(
         "subtitulo" => "Exportações somaram US$ 14,91 bilhões e a importações chegaram a US$ 12,18 bilhões",
         "tema" => "Comércio",
         "assunto" => 5,
-        "foto_destaque" => "mini_exportacoes.jpeg",
-        "foto_mini" => NULL
+        "foto" => "mini_exportacoes.jpeg",
     ),
     3 => array(
         "titulo" => "Ajuste de investimentos não reduzirá produção da Petrobras",
         "subtitulo" => "Presidente da estatal afirmou que empresa deve atingir meta sem prejudicar população",
         "tema" => "Petróleo",
         "assunto" => 5,
-        "foto_destaque" => "mini_petrobras.jpeg",
-        "foto_mini" => NULL
-    )
+        "foto" => "mini_petrobras.jpeg",)
 );
