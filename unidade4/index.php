@@ -20,6 +20,11 @@
     $assuntos = include 'dados/assuntos.php';
     $noticias = include 'dados/noticias.php';
     $noticia_destaque = array_shift($noticias);
+    // caso queira limitar em 3 somente notícias
+    // - descomentar linhas abaixo
+    // e usar variável $somente_3_noticias no foreach
+//    $somente_3_noticias = array_chunk($noticias, 3, true);
+//    $somente_3_noticias = $somente_3_noticias[0];
 ?>
 
                     <h3><?php echo $assuntos[$noticia_destaque['assunto']] ?></h3>
