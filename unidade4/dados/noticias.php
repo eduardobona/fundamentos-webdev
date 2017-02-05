@@ -1,31 +1,31 @@
 <?php
 
 return array(
-    0 => array(
+    1 => array(
         "titulo" => "Governo federal zera fila de espera do Bolsa Família em janeiro",
         "subtitulo" => "Cerca de 460 mil pessoas que aguardavam para receber benefício foram incluídas no programa",
         "tema" => "Políticas Públicas",
         "assunto" => 1,
         "foto" => "destaque_bolsafamilia.jpeg"
     ),
-    1 => array(
-        "titulo" => "Brasil sairá da recessão ainda no 1° trimestre, afirma ministro",
-        "subtitulo" => "A investidores, Meirelles listou medidas para que País \"volte a crescer com taxas mais elevadas\"",
-        "tema" => "RECUPERAÇÃO ECONÔMICA",
-        "assunto" => 5,
-        "foto" => "mini_meirelles.jpeg"
-    ),
     2 => array(
-        "titulo" => "Balança de janeiro tem o maior superávit dos últimos 11 anos",
-        "subtitulo" => "Exportações somaram US$ 14,91 bilhões e a importações chegaram a US$ 12,18 bilhões",
-        "tema" => "Comércio",
+        "titulo" => "Ministério anuncia contrato de dragagem do Porto de Santos",
+        "subtitulo" => "No aniversário de 125 anos do maior porto da América Latina, governo anunciou investimento de R$ 369 milhões",
+        "tema" => "INVESTIMENTOS",
         "assunto" => 5,
-        "foto" => "mini_exportacoes.jpeg",
+        "foto" => "mini_portosantos.jpeg"
     ),
     3 => array(
-        "titulo" => "Ajuste de investimentos não reduzirá produção da Petrobras",
-        "subtitulo" => "Presidente da estatal afirmou que empresa deve atingir meta sem prejudicar população",
-        "tema" => "Petróleo",
-        "assunto" => 5,
-        "foto" => "mini_petrobras.jpeg",)
+        "titulo" => "Acervos dos museus estarão disponíveis pela internet",
+        "subtitulo" => "Digitalização tem como objetivo democratizar o acesso ao vasto patrimônio preservado em museus",
+        "tema" => "Museus",
+        "assunto" => 9,
+        "foto" => "mini_museu.jpeg",
+    ),
+    4 => array(
+        "titulo" => "Novo medicamento para artrite reumatoide é incorporado ao SUS",
+        "subtitulo" => "Pacientes que não responderam aos tratamentos ofertados terão acesso ao citrato de tofacitinibe",
+        "tema" => "Atenção Básica",
+        "assunto" => 11,
+        "foto" => "mini_medicamento.jpeg",)
 );

@@ -19,12 +19,8 @@
 <?php
     $assuntos = include 'dados/assuntos.php';
     $noticias = include 'dados/noticias.php';
-    $noticia_destaque = array_shift($noticias);
-    // caso queira limitar em 3 somente notícias
-    // - descomentar linhas abaixo
-    // e usar variável $somente_3_noticias no foreach
-//    $somente_3_noticias = array_chunk($noticias, 3, true);
-//    $somente_3_noticias = $somente_3_noticias[0];
+    // a noticia de destaque sempre será a primeira
+    $noticia_destaque = $noticias[1];
 ?>
 
                     <h3><?php echo $assuntos[$noticia_destaque['assunto']] ?></h3>
@@ -37,16 +33,25 @@
                 </div>
                 <div class="noticia-lista">
                     <ul>
-<?php   foreach ($noticias as $noticia) { ?>
+<?php
+    foreach ($noticias as $codigo => $noticia) {
+        // a primeira não deve entrar na lista
+        if ($codigo == 1) {
+            continue;
+        }
+        $link = "noticia.php?codigo=" . $codigo;
+?>
                         <li>
-                            <a href="#">
+                            <a href="<?php echo $link ?>">
                                 <img width="100%" src="imagens/noticias/<?php echo $noticia['foto'] ?>">
                             </a>
                             <small><?php echo $noticia['tema'] ?></small>
-                            <h4><a href="#"><?php echo $noticia_destaque['titulo']?></a></h4>
-                            <p><a href="#"><?php echo $noticia_destaque['subtitulo']?></a></p>
+                            <h4><a href="<?php echo $link ?>"><?php echo $noticia['titulo']?></a></h4>
+                            <p><a href="<?php echo $link ?>"><?php echo $noticia['subtitulo']?></a></p>
                         </li>
-<?php   } ?>
+<?php
+    }
+?>
                     </ul>
                 </div>
             </div>

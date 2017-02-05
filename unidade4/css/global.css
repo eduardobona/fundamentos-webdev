@@ -336,6 +336,14 @@
         margin-right: 0;
         margin-left: 20px;
     }
+    .corpo .conteudo .noticia-destaque-conteudo img{
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .corpo .conteudo .noticia-destaque-conteudo p{
+        text-align: justify;
+    }
 
     /**
      * Lista de 3 Notícias
