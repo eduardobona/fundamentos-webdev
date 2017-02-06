@@ -39,14 +39,15 @@
         if ($codigo == 1) {
             continue;
         }
+        $link = "noticia.php?codigo=" . $codigo;
 ?>
                         <li>
-                            <a href="#">
+                            <a href="<?php echo $link ?>">
                                 <img width="100%" src="imagens/noticias/<?php echo $noticia['foto'] ?>">
                             </a>
                             <small><?php echo $noticia['tema'] ?></small>
-                            <h4><a href="#"><?php echo $noticia['titulo']?></a></h4>
-                            <p><a href="#"><?php echo $noticia['subtitulo']?></a></p>
+                            <h4><a href="<?php echo $link ?>"><?php echo $noticia['titulo']?></a></h4>
+                            <p><a href="<?php echo $link ?>"><?php echo $noticia['subtitulo']?></a></p>
                         </li>
 <?php
     }
